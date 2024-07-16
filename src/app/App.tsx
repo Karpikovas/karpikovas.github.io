@@ -8,7 +8,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Текст писать тут
+          Имя: Карпикова Софья Павловна
+        </p>
+        <p>
+          Должность: Fullstack-разработчик
+        </p>
+        <p>
+          Опыт: 2019-2024
+        </p>
+        <p>
+          Технологии: PHP, Symfony, PostgreSQL, JS, VueJS
+        </p>
+        <p>
+          Цель: изучить фреймворк React для выполнения задач на новом проекте
         </p>
       </header>
     </div>
