@@ -53,25 +53,25 @@ type Product = {
 type Operation = Cost | Profit;
 
 /*
-* Трата (Cost) содержит
-* - id (строка)
-* - name (строка)
-* - desc (строка, необязательно)
-* - createdAt (строка)
-* - amount (число)
-* - category (Категория)
-* - type ('Cost')
-*
-* */
+ * Трата (Cost) содержит
+ * - id (строка)
+ * - name (строка)
+ * - desc (строка, необязательно)
+ * - createdAt (строка)
+ * - amount (число)
+ * - category (Категория)
+ * - type ('Cost')
+ *
+ * */
 
 type Cost = {
-    id: string;
-    name: string;
-    desc?: string;
-    createdAt: string;
-    amount: number;
-    category: Category;
-    type: 'Cost'
+  id: string;
+  name: string;
+  desc?: string;
+  createdAt: string;
+  amount: number;
+  category: Category;
+  type: 'Cost';
 };
 
 /*
@@ -85,19 +85,19 @@ type Cost = {
  * - type ('Profit')
  * */
 type Profit = {
-    id: string;
-    name: string;
-    desc?: string;
-    createdAt: string;
-    amount: number;
-    category: Category;
-    type: 'Profit'
+  id: string;
+  name: string;
+  desc?: string;
+  createdAt: string;
+  amount: number;
+  category: Category;
+  type: 'Profit';
 };
 
 const randomCategory: Category = {
-    id: 'string',
-        name: 'String',
-            photo: 'photo'
+  id: 'string',
+  name: 'String',
+  photo: 'photo',
 };
 
 /**
@@ -105,16 +105,16 @@ const randomCategory: Category = {
  * Принимает дату создания (строка)
  * */
 export const createRandomProduct = (createdAt: string): Product => {
-    return {
-        id: 'string',
-        name: 'string',
-        photo: 'string',
-        desc: 'string',
-        createdAt: createdAt,
-        oldPrice: 123,
-        price: 123,
-        category: randomCategory
-    }
+  return {
+    id: 'string',
+    name: 'string',
+    photo: 'string',
+    desc: 'string',
+    createdAt: createdAt,
+    oldPrice: 123,
+    price: 123,
+    category: randomCategory,
+  };
 };
 
 /**
@@ -122,12 +122,12 @@ export const createRandomProduct = (createdAt: string): Product => {
  * Принимает дату создания (строка)
  * */
 export const createRandomOperation = (createdAt: string): Operation => {
-    return {
-        id: 'string',
-        name: 'string',
-        createdAt: createdAt,
-        amount: 123,
-        category: randomCategory,
-        type: 'Profit'
-    }
+  return {
+    id: 'string',
+    name: 'string',
+    createdAt: createdAt,
+    amount: 123,
+    category: randomCategory,
+    type: 'Profit',
+  };
 };
